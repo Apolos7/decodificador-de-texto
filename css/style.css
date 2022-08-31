@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html,
+body {
+    background-color: #E5E5E5;
+}
+
+#main-section {
+    margin: 40px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.center-container {
+    display: flex;
+    margin-right: 80px;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.text-input textarea {
+    width: 100%;
+    font-size: 32px;
+    color: #0A3871;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 400px;
+    resize: none;
+}
+
+::placeholder {
+    color: #0A3871;
+}
+
+.instructions-container {
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.instructions-container img {
+    margin-right: 8px;
+}
+
+.buttons-container {
+    display: flex;
+}
+
+#cript-button {
+    background-color: #0A3871;
+    border-radius: 24px;
+    padding: 24px;
+    color: #FFFFFF;
+    border: none;
+    width: 330px;
+    height: 70px;
+    margin-right: 24px;
+}
+
+#cript-button {
+    cursor: pointer;
+}
+
+#descript-button {
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    width: 330px;
+    height: 70px;
+}
+
+#descript-button:hover {
+    cursor: pointer;
+}
+
+.output-card {
+    background-color: #FFFFFF;
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 500px;
+    padding: 32px;
+}
+
+#text-output-container {
+    display: none;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#text-output-container button {
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    width: 330px;
+    height: 70px;
+}
+
+#text-output {
+    color: #495057;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+#placeholder img {
+    width: 330px;
+    height: 300px;
+    background-color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+#placeholder {
+    text-align: center;
+}
+
+
+#placeholder h1 {
+    color: #343A40;
+    background-color: #FFFFFF;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+#placeholder p {
+    color: #495057;
+    background-color: #FFFFFF;
+}
