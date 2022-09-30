@@ -1,142 +1,163 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
     font-family: 'Inter', sans-serif;
+    line-height: 150%;
 }
 
 html,
 body {
-    background-color: #E5E5E5;
+    background: #E5E5E5;
 }
 
-#main-section {
-    margin: 40px;
+header {
+    margin: 40px 0 0 40px;
 }
 
-.main-container {
+main {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.center-container {
-    display: flex;
+.input-section {
     margin-right: 80px;
-    flex-direction: column;
-    justify-content: space-around;
 }
 
-.text-input textarea {
-    width: 100%;
+.warning-container {
+    display: flex;
+    align-items: center;
+}
+
+.warning-container img {
+    width: 16px;
+    height: 16px;
+}
+
+.input-texto {
     font-size: 32px;
     color: #0A3871;
     border: none;
     background-color: transparent;
     outline: none;
-    height: 400px;
     resize: none;
+    height: 400px;
+    min-width: 680px;
+    width: 100%;
 }
 
 ::placeholder {
     color: #0A3871;
 }
 
-.instructions-container {
-    display: flex;
-    margin-bottom: 16px;
-}
-
-.instructions-container img {
-    margin-right: 8px;
-}
-
 .buttons-container {
     display: flex;
+    justify-content: space-evenly;
 }
 
-#cript-button {
+.encriptar {
     background-color: #0A3871;
     border-radius: 24px;
     padding: 24px;
     color: #FFFFFF;
     border: none;
-    width: 330px;
-    height: 70px;
-    margin-right: 24px;
-}
-
-#cript-button {
+    max-width: 330px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
-#descript-button {
+.desencriptar {
     background-color: #D8DFE8;
     border-radius: 24px;
     padding: 24px;
     color: #0A3871;
     border: solid 1px #0A3871;
-    width: 330px;
-    height: 70px;
-}
-
-#descript-button:hover {
+    max-width: 330px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
     cursor: pointer;
 }
 
-.output-card {
+.output-section {
     background-color: #FFFFFF;
     border-radius: 32px;
-    display: flex;
-    flex-direction: column;
+    padding: 32px 32px;
     width: 400px;
-    height: 500px;
-    padding: 32px;
+    display: flex;
+    justify-content: center;
 }
 
-#text-output-container {
-    display: none;
-    flex-grow: 1;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-#text-output-container button {
-    background-color: #D8DFE8;
-    border-radius: 24px;
-    padding: 24px;
-    color: #0A3871;
-    border: solid 1px #0A3871;
-    width: 330px;
-    height: 70px;
-}
-
-#text-output {
-    color: #495057;
+.output-section h6 {
+    font-weight: 700;
     font-size: 24px;
+    line-height: 120%;
+    color: #343A40;
+}
+
+.output-section p {
+    font-weight: 400;
+    font-size: 16px;
     line-height: 150%;
+    color: #495057;
 }
 
-#placeholder img {
-    width: 330px;
-    height: 300px;
-    background-color: #FFFFFF;
-    margin-bottom: 32px;
-}
-
-#placeholder {
+.placeholder {
     text-align: center;
 }
 
-
-#placeholder h1 {
-    color: #343A40;
-    background-color: #FFFFFF;
-    font-weight: 700;
-    font-size: 24px;
-    margin-bottom: 16px;
+.placeholder img {
+    margin: 0 0 32px 0;
 }
 
-#placeholder p {
-    color: #495057;
-    background-color: #FFFFFF;
+.placeholder h6 {
+    margin: 0 0 16px 0;
+}
+
+.output-message {
+    visibility: hidden;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.output-message textarea {
+    font-size: 32px;
+    color: #0A3871;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    resize: none;
+    display: block;
+}
+
+.copiar {
+    background-color: #D8DFE8;
+    border-radius: 24px;
+    padding: 24px;
+    color: #0A3871;
+    border: solid 1px #0A3871;
+    max-width: 330px;
+    max-height: 70px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+footer {
+    margin: 10px 0;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 16px;
+}
+
+footer a:link,
+footer a:visited {
+    color: #140e31c5;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }

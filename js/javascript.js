@@ -1,7 +1,7 @@
-const input = document.getElementById('input-text');
-const placeholder = document.getElementById('placeholder');
-const textOutputContainer = document.getElementById('text-output-container');
-const textOutput = document.getElementById('text-output');
+const input = document.getElementById('input');
+const placeholder = document.getElementById('div-default');
+const textOutputContainer = document.getElementById('div-replace');
+const textOutput = document.getElementById('output');
 
 function criptografar() {
     let text = input.value;
@@ -47,9 +47,18 @@ function descriptografar() {
     showResult(text);
 }
 
+function copiar() {
+    textOutput.select();
+    textOutput.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    textOutput.setSelectionRange(0, 0);
+}
+
 
 function showResult(text) {
-    placeholder.style.display = "none";
+    placeholder.style.display = 'none';
+    placeholder.style.visibility = 'hidden';
     textOutput.textContent = text;
     textOutputContainer.style.display = 'flex';
+    textOutputContainer.style.visibility = 'visible'
 }
